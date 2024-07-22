@@ -1,0 +1,291 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+section{
+    text-align: center;
+    flex: 1;
+    transition: order 2s ease;
+  
+}
+#seccion1 img, #crearusuario img {
+    width: 25px;
+    margin-right: 10px;
+}
+#seccion2{
+    background-color: blueviolet; 
+    color: white; 
+    display: flex;
+}
+#seccion2 b{
+font-size: 30px;
+}
+#seccion2 button  b{
+    font-size: 12px;
+}
+#seccion2 button {
+    color: white;
+    cursor:pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+#olvidada{
+    position: absolute;
+    left: 5%;
+    bottom: 20%;
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(60, 115, 117);
+}
+input:not(input[type="text"], input[type="password"], input[type="number"]), #formulariosecundario input:not(input[type="text"], input[type="password"], #correo,input[type="number"] ){
+    border-radius: 5px;
+    padding: 5px;
+    border: solid 1px black;
+}
+input[type="submit"]{
+cursor: pointer;
+
+}
+input[type="text"], input[type="password"], #formulariosecundario input[type="text"], #formulariosecundario input[type="password"],  #formulariosecundario input[type="email"],#formulariosecundario input[type="number"] {
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 45%;
+    border: transparent;
+    border-radius: 20px;
+    
+    transition: 1s all ease;
+    border-bottom: 2px solid rgba(61, 59, 59, 0.5);}
+input[type="text"]:focus, input[type="password"]:focus, #formulariosecundario input[type="password"]:focus,#formulariosecundario input[type="number"]:focus,  #formulariosecundario input[type="text"]:focus{
+    outline: 2px solid transparent;
+    border-radius: 0;
+    padding-left: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 2px rgb(158, 158, 158);
+}
+div{
+    position: relative;
+   height: 50px;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 15px;
+}
+ form div label, #formulariosecundario label{
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    animation: bounceIn;
+    animation-duration: 1s;
+    transition: 2s all ease;
+    pointer-events: none;
+}   
+#seccion2{
+    background-color: rgb(192, 125, 255);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 0.5px;
+  height: 100vh;
+}
+main{
+
+  position: relative;
+  height: max-content;
+}
+input[type="text"]:focus+label,
+input[type="text"]:not(:placeholder-shown)+label,
+input[type="password"]:focus+label,
+input[type="password"]:not(:placeholder-shown)+label,
+
+input[type="number"]:focus+label,
+input[type="number"]:not(:placeholder-shown)+label
+
+{
+    animation: rotateInUpLeft;
+    animation-duration: 1s ;
+    top: 5%;
+    left: 3%;
+    font-size: 90%;
+    
+}
+main section input[type="submit"], button {
+    outline: none; 
+}
+#formulariosecundario input[type="text"]:focus+label,
+#formulariosecundario input[type="text"]:not(:placeholder-shown)+label,
+#formulariosecundario input[type="password"]:focus+label,
+#formulariosecundario input[type="password"]:not(:placeholder-shown)+label,
+
+#formulariosecundario input[type="number"]:focus+label,
+#formulariosecundario input[type="number"]:not(:placeholder-shown)+label
+{
+    color: black;
+    animation: rotateInUpLeft;
+    animation-duration: 1s ;
+    top: 0%;
+    left: 3%;
+    font-size: 90%;
+    
+}
+#seccion1 form input:not(#olvidada, input[type="text"],input[type="password"], input[type="email"], input[type="number"]){
+    color: white;
+    background-color: blueviolet;
+    padding: 5px 15px 5px 15px;
+}
+#formulariosecundario input[type="submit"]{
+    color: white;
+    background-color: blueviolet;
+    border: 2px black;
+    padding: 5px 15px 5px 15px;
+}
+#seccion1 a:hover{
+    animation: flipInX;
+    animation-duration: 0.5s;
+}
+#formulariosecundario label{
+    color: black;
+}
+#div1section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    transform: translate(-25% -25%);
+}
+#crearusuario{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    transform: translate(-25% -25%);
+}
+#segundoclick{
+    display: none;
+    
+}
+#equis{
+    cursor: pointer;
+}
+section, main{
+    justify-content: center;
+    align-items: center;
+}
+#iniciarsesion{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+#segundoclick,#div1section2,#crearusuario{
+    height: 100%;
+}#correo, input[type="number"]{
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 45%;
+    height: 20px;
+    border-radius: 0; 
+    background-color: transparent; 
+    transition: border-bottom 0.5s ease; 
+    color: black;
+    padding: 5px;
+    
+    font-size: 80%;
+}
+#iniciarsesion label{
+    color:rgb(175, 175, 175);
+}
+#iniciarsesion input:focus+label,#iniciarsesion input:not(:placeholder-shown)+label{
+    color: black;
+} 
+#correo:focus, input[type="number"]:focus {
+    outline: none; 
+    box-shadow: 1px 2px 2px rgb(158, 158, 158);
+}
+
+#correo:focus+label,#correo:not(:placeholder-shown)+label, input[type="number"]:focus+label,input[type="number"]:not(:placeholder-shown)+label {
+    animation: rotateInUpLeft;
+    animation-duration: 1s;
+    top: 5%;
+    left: 3%;
+    color: black;
+}
+a{
+    outline: none;
+}
+
+.trues{ 
+    color: blue;
+    font-size: 12px;
+}
+#segundoclick label{color: rgb(177, 177, 177);
+}
+#numerodetelefono{
+    background-color: transparent;
+}
+
+#ventanausuario{
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 100%;
+    transform: translateX(-100%);
+border-radius: 10px;
+    top: 50px;
+    background-color: rgb(241, 196, 255);
+}
+#segundatache{
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    top:0;
+    left: 90%;
+    transform: translateX(-90%);
+    display: none;
+    top: 20;
+    cursor:pointer;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .g-recaptcha{
+    width: 10px;
+    transform: scale(0.7); 
+    transform-origin: 0 0;
+}
+.errores,.errores2{
+    color: red;
+}
+
+@media(width <400px){
+    main{
+        
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    }

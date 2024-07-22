@@ -1,0 +1,115 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(206, 173, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.header {
+    background: #4b3832;
+    padding: 1rem;
+    border-radius: 8px 8px 0 0;
+    color: white;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.content {
+    padding: 1rem 0;
+}
+
+.user-info {
+    margin-bottom: 1.5rem;
+}
+
+.user-info p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.profile-pic-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.profile-pic-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+.profile-pic-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.overlay span {
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+#file-input {
+    display: none;
+}
+#cambiar{
+    display: none;
+}
+.btn-custom {
+    flex: 1 1 48%;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background: #d4a373;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+#regresar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 28px;
+    color: #333;
+    cursor: pointer;
+}
+.btn-custom:hover {
+    background: #b38958;
+    transform: translateY(-3px);
+}

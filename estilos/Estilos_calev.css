@@ -1,0 +1,650 @@
+  *
+  {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;  
+      
+  }
+  #ventanacompleta{
+    background-image: url("../imagenes/Pasted-20240305-185428_preview_rev_1.png"); 
+  background-position:  0 125px ;
+    background-size: 100% 100%;
+  background-repeat: no-repeat;
+    min-width: 100%; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .divicionarriba{
+    position: relative;
+    flex: 1;
+  }
+  .imgLogo{
+      margin-left: 48%;
+    
+  }
+  body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #f7f7f7; 
+    
+    color: #333; 
+}
+    #imgre{
+      position: absolute;
+      top: 0;
+      left: 100%;
+      transform: translateX(-100%);
+      background-color: transparent;
+      border: none;
+      padding: 5px;
+      padding-bottom: 20px;
+      cursor: pointer;
+    }
+   
+  body header{
+    display: flex;
+    background-color:#ada7a7 ;
+  }
+  nav{
+      display: flexbox;
+      padding: 10px;
+      background-color: #ada7a7;
+      
+  }
+  nav ul{
+      list-style:none;
+      margin: 0;
+      padding: 0;
+      display:flex;
+      justify-content: space-around;
+
+  }
+  .boton.cinco{
+    width: 20%;
+    height: 5%;
+  }
+  .boton.cinco span {
+    position: absolute;
+    animation-name: bounceInDown;
+    animation-duration: 1s;
+  }
+  
+  .boton.cinco .icono {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    left: -40px;
+    transition: .3s ease-in-out all;
+    opacity: 0;
+  }
+  
+  .boton.cinco svg {
+    color: #000000;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .boton.cinco:hover {
+    background: #ffffff;
+  }
+  
+  .boton.cinco:hover .icono {
+    left:50%;
+    transform: translate(-50%);
+    opacity: 1;
+    color: black;
+  }
+  
+  .boton.cinco:hover span {
+    animation-name: fadeOutDownBig;
+    animation-duration: 0.5s;
+    display: none;
+  
+  }
+  nav ul li{
+      display: flexbox;
+      padding: 5px 10px;
+      float:left 10%;
+      margin-left: 0;
+      margin-top: 0px;
+      font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: italic;
+      
+  }
+  nav ul li a:hover{
+      text-decoration:none;
+      
+  }
+    nav a {
+      text-decoration: none;
+      position: relative;
+      color:antiquewhite;
+    }
+    li{
+      color: antiquewhite;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: black;
+      transition: width 0.3s ease;
+    }
+    
+    nav a:hover::after {
+      width: 100%;
+    }
+    nav{
+      
+      background-color: #8a7b9b;
+    } 
+  nav a {
+    text-decoration: none;
+    position: relative;
+    color:antiquewhite;
+  }
+  li{
+    color: antiquewhite;
+  }
+  nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+  }
+
+  nav a:hover::after {
+    width: 100%;
+  }
+
+  footer{
+    background-color: rgb(196, 196, 196);
+    
+  }
+
+  hr {
+    flex: 1;
+    border: none; 
+    border-top: 1px solid black;
+    margin-top: 30px;
+  }
+  footer a {
+    position: relative;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  footer a button {
+    width: 100%; 
+    height: 35px; 
+    padding: 0; 
+    border: none; 
+    background: transparent; 
+    cursor: pointer;
+    position: relative;
+  }
+  #whats::before{
+    content: "" ;
+    position: absolute;
+    top: -5px;
+    width: 100%;
+    background-color: rgb(45, 255, 108);
+    border: 2px solid rgb(45, 255, 108);
+    border-radius: 20px;
+    
+    pointer-events: none;
+    transition: ease all 1s;
+    z-index: 1;
+  }
+  #face::before{
+    content: "" ;
+    position: absolute;
+    top: -5px;
+    width: 100%;
+    background-color: rgb(90, 45, 255);
+    border: 2px solid rgb(90, 45, 255);
+    border-radius: 20px;
+    z-index: 1;
+    
+    transition: ease all 1s;
+    pointer-events: none;
+  }
+  #ista::before {
+    content: "" ;
+    position: absolute;
+    top: -5px;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, rgb(27, 3, 165), rgb(226, 61, 143), rgb(241, 190, 78));
+    
+    transition: ease all 1s;
+    border-radius: 20px;
+    
+    pointer-events: none;
+    z-index: 1;
+  }
+  #ista:hover::before,#face:hover::before,#whats:hover::before {
+    top:100%;
+  }
+  footer a button img:hover{
+    animation:rotateIn;
+    animation-duration: 2s;
+    filter: grayscale(0%) brightness(100%);
+  }
+  footer a button img {
+    width: 100%; 
+    height: 100%; 
+    filter: grayscale(200%) brightness(100%);
+  }
+  footer div{
+    width: 100%;
+    
+    text-align: center;
+    display: flex;
+        justify-content: space-around; 
+        align-items: center; 
+  }
+  footer section{
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    text-align: center;
+  }
+
+  #ventanaregistrosesion{
+    display: none;
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+    left: 30%;
+    bottom: 10%;
+    transform: translate(-30% -10%);
+    border-radius: 20px;
+    width: 100vh;
+    height: 70vh;
+  border: 0.5px black solid;  
+  }
+
+  #equis{
+  display: none;
+    cursor: pointer;
+    height: max-content;
+    width: max-content;
+    position: fixed;
+    left: 69%;
+    top:10%;
+    z-index: 999;
+  }
+  #barradebusqueda{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 50%;
+    
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+  #barradebusqueda input{
+    border-radius: 10px;
+    border: none;
+    padding: 2px;
+    outline: none;
+    width: 100%;
+  }
+  #barradebusqueda button{
+    position: absolute;
+    left: 100%;
+    transform: translateX(-100%);
+    width: 25px;
+    height: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid grey;
+    background-color: rgb(240, 200, 184);
+  }
+  #barradebusqueda img{
+    width: 100%;
+    height: 100%;
+  }
+
+  main{
+    display: flex;
+    margin-top: 30px; 
+    display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  .rangodinero {
+    width: 100%;
+   background-color: transparent;
+   border: none;
+   outline: none; 
+  }
+  #rangoprecio{
+    flex-wrap: wrap;
+    display: none;
+
+  }
+  #rangoprecio p{
+    padding: 5px;
+  }
+ 
+  #span1{
+    width: 100%;
+    display: flex;
+    border: solid 2px grey;
+    padding: 5px;
+  }
+  #span1 p{
+    margin-left : 10px;
+    margin-right : 10px;
+  }
+  #span1 input{
+    margin-left: 10px;
+  }
+  .rangodinero::-webkit-inner-spin-button, 
+ .rangodinero::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+  .diferentesfiltraciones div{
+    width: 100%;
+    }
+    input[type="range"]{
+      width: 100%;
+    }
+  .diferentesfiltraciones{
+    
+    border-bottom: solid 0.5px grey;
+    width: 100%;
+  }
+  
+#filtracion {
+  max-width: 100%;  
+  margin-left: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(240, 240, 240); 
+}
+
+#filtracion button{
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  margin: 10px 5px;
+}
+#filtracion button:not(#filtrar){
+  color: black;
+}
+.diferentesfiltraciones button {
+  background-color: rgb(85, 85, 85); 
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.diferentesfiltraciones button:hover {
+  background-color: rgb(119, 119, 119); 
+}
+.diferentesfiltraciones .rotacion {
+  transition: transform 0.3s ease;
+}
+
+.diferentesfiltraciones .rotacion.rotate {
+  transform: rotate(90deg);
+}
+#rangoprecio, #divmarca, #divopiniones, #divtipodeproducto {
+  display: none;
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff; 
+}
+
+#rangoprecio input,
+#divmarca input,
+#divopiniones input,
+#divtipodeproducto input,
+#rangoprecio p,
+#divmarca p,
+#divopiniones p,
+#divtipodeproducto p {
+  margin-right: 10px;
+}
+
+  .rotacion{
+    margin-left: 80%;
+    transition: 0.5s;
+    display: inline-block;
+    transform: rotate(90deg);
+  }
+  #divmarca{
+    overflow: auto;
+    display: none;
+  }
+  #aplicardatos{
+    background-color: rgb(206, 206, 206);
+    border-radius: 20px;
+    border: solid black 1px;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  #filtrar{
+    background-color:rgb(146, 141, 141);
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+  }
+  #divmarca  input, #divtipodeproducto input{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(156, 156, 156);
+  }
+  #divmarca  input:hover,#divtipodeproducto input:hover{
+   transition: 0.5s;
+    color: black;
+  }
+  #filtracion  button:not(#filtrar){
+    text-align: start;
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    margin-top: 30px;
+  }
+    #filtracion{
+      
+   background-color: rgb(243, 237, 237);
+      width: 15%;
+    height: max-content;
+    position: sticky;
+    top: 1px;
+
+
+
+  }
+  #carritodeconpras{
+    background-image: url('../imagenes/shopping_cart_FILL0_wght400_GRAD0_opsz24.png');
+    background-size: 30px, 30px;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 5px;
+  }
+#divtipodeproducto
+{
+  overflow: auto;
+    display: none;
+}
+#divestrellas button {
+  width: max-content;
+}
+#divestrellas button span{
+  padding: 10px;
+  font-size: 20px;
+  
+}
+  main section:not(#filtracion){
+    flex-grow: 2;
+    width: 10%;
+    margin-left: 2%;
+    display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  #divopiniones{
+    display: none;
+  }
+#divestrellas{
+  display: ormlex;
+  flex-wrap: wrap;
+}
+  main section div  {
+  width: 50%;
+  margin-top: 10px;
+  height: max-content;
+  }
+ 
+  
+.boton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	background: #141414;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+ 
+.divprin1, .divprin2 {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.div1productos,.div2productos {
+  padding: 20px;
+  margin: 20px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.div1productos:hover,.div2productos:hover  {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.div1productos img, .div2productos img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.div1productos h3,.div2productos h3 {
+  margin: 15px 0 10px;
+  font-size: 1.6em;
+  font-weight: 500;
+  color: #333;
+}
+.marca {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 10px;
+}
+.precio {
+  font-size: 1.4em;
+  color: #333;
+  margin: 10px 0;
+  font-weight: 700;
+}
+.boton {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+.boton:hover {
+  background-color: #555;
+}
+  /*tipo_de_producto
+  y
+  marca*/
+ 
+    #imagusuario{
+      border-radius: 800px;
+  }
+  
+#ventanausuario{
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 100%;
+  transform: translateX(-100%);
+border-radius: 10px;
+  top: 50px;
+  background-color: rgb(241, 196, 255);
+}
+#segundatache{
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  top:0;
+  left: 90%;
+  transform: translateX(-90%);
+  display: none;
+  top: 20;
+  cursor:pointer;
+}

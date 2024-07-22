@@ -1,0 +1,95 @@
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 400px;
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco transparente para que el fondo no distraiga demasiado */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            position: relative;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input-container {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        input[type="tel"] {
+            width: calc(100% - 24px); /* Ajuste para el padding y border */
+            padding: 12px;
+            border: 2px solid #333; /* Borde oscuro */
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="tel"]:focus {
+            border-color: #666; /* Borde más oscuro al enfocar */
+            outline: none;
+        }
+
+        input[type="submit"] {
+            padding: 12px 30px;
+            background-color: #4CAF50; /* Verde */
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"].btn-disabled {
+            background-color: #aaa; /* Color de fondo gris para el botón deshabilitado */
+            cursor: not-allowed; /* Cursor no permitido cuando está deshabilitado */
+        }
+
+        input[type="submit"].btn-enabled {
+            background-color: red; /* Verde más oscuro al pasar el cursor */
+            cursor: pointer;
+        }
+
+        #regresar {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 28px;
+            color: #333; /* Color de texto oscuro */
+            cursor: pointer;
+        }
+
+        #titulo {
+            margin-top: 20px;
+            position: relative;
+        }
+        #telefonoh1 {
+            width: 20px; /* Ajusta el tamaño de la imagen según sea necesario */
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        #telefono2 {
+            width: 80px; /* Ajusta el tamaño de la imagen según sea necesario */
+            vertical-align: middle;
+            margin-right: 10px;
+        }

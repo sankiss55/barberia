@@ -1,0 +1,54 @@
+#regresar{
+    cursor: pointer;
+    
+    position: absolute;
+    left: 0;
+    
+}
+body{
+    text-align: center;
+    background-color: rgb(186, 186, 255);
+}
+a{
+    text-decoration: none;
+    color: rgb(59, 59, 255);
+}
+#texto{
+    font-family: "Luxurious Roman", serif;
+    font-weight: 400;
+    font-size: 15;
+    font-style: normal;
+}
+#enviar {
+    cursor: not-allowed;
+    border-radius: 20px;
+    background-color: darkgoldenrod;
+}
+#reenviar{
+    background-color: transparent;
+    border: none;
+    color: blue ;
+}
+h1, b {
+    position: relative;
+}
+
+h1 img {
+    width: 1em; 
+}
+b img{
+    width: 2em; 
+}
+input[type="number"]{
+    border-radius: 5px;
+    outline: none;
+    padding-left: 7px;
+    border: 1.5px solid black;
+}
+input[type="submit"]{
+    cursor:pointer;
+}
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de Horas</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .reserved-hours {
+            margin-top: 10px;
+        }
+        .reserved-hours ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .reserved-hours ul li {
+            background-color: #f8d7da;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <label for="date">Selecciona una fecha:</label>
+    <input type="date" id="date">
+
+    <label for="hours">Selecciona una hora:</label>
+    <select id="hours">
+        <option value="09:00:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="13:00">13:00</option>
+        <option value="14:00">14:00</option>
+        <option value="15:00">15:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+        <option value="18:00">18:00</option>
+        <option value="19:00">19:00</option>
+        <option value="20:00">20:00</option>
+        <option value="21:00">21:00</option>
+        <option value="22:00">22:00</option>
+    </select>
+
+    <script>
+        $(document).ready(function() {
+            $('#date').on('change', function() {
+                var selectedDate = $(this).val();
+                if (selectedDate) {
+                    $.ajax({
+                        url: 'check_availability.php',
+                        method: 'POST',
+                        data: { date: selectedDate },
+                        dataType: 'json',
+                        success: function(data) {
+                            var hoursSelect = $('#hours');
+                            hoursSelect.find('option').prop('disabled', false); // Habilitar todas las opciones
+
+                            if (data.length > 0) {
+                                $.each(data, function(index, item) {
+                                    hoursSelect.find('option[value="' + item.hora + '"]').prop('disabled', true);
+                                });
+                            }
+                        },
+                        error: function(jqXHR, textStatus, errorThrown) {
+                            alert("Error: " + textStatus + " - " + errorThrown);
+                        }
+                    });
+                } else {
+                    $('#hours').find('option').prop('disabled', true); // Habilitar todas las opciones
+                }
+            });
+        });
+    </script>
+</body>
+</html>

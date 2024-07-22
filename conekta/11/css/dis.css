@@ -1,0 +1,29 @@
+body{
+    background-color: white;
+    text-align: center;
+}
+tr{
+    table-layout: auto;
+}
+table{
+    border-color: rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /*O*/
+    width: 1100px;
+    height: 80px;
+}
+td{
+    height: 50px;
+    letter-spacing: 5px;
+    font-size: 40px;
+    background: linear-gradient(
+        90deg,
+        rgb(222, 241, 224)20%,
+        rgb(36, 167, 36)90%
+    );
+}
+tr{
+    border-color: rgb(0, 255, 0);
+}

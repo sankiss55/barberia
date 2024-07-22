@@ -1,0 +1,35 @@
+body
+{
+    background-image:url(../imagenes/TOLUCA\ 1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -10px;
+    background-color: rgb(113, 240, 162);
+}
+.conter
+{
+    position: absolute;
+    right: 39%;
+    bottom: 15%;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 20%;
+}
+.btn
+{
+ background: linear-gradient(
+        90deg,
+        rgb(255, 255, 255)20%,
+        rgb(110,192,110)60%
+    );
+cursor: pointer;
+}
+input
+{
+    padding: 2px;
+    border: 2px solid #0c0c0c;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}

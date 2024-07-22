@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: rgb(250, 243, 243);
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 32px;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h6{
+    color: black;
+    font-size: 25px;
+    background-color: rgb(110,192,110);
+}
+h5{
+    text-align: center;
+    color: black;
+    font-size: 32px;
+}
+p{
+    color: black;
+    font-size: 20px;
+}
+nav{
+    text-align: center;
+  background-color: rgb(100,192,110);
+}
+nav :hover{
+    color: darkgreen;
+    font-size: 30px;
+}
+section{
+    text-align: left;
+}
+aside{
+    text-align: right;
+}
+section, aside{
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+}
+body{
+    background: linear-gradient(
+        90deg,
+        rgb(255, 255, 255)20%,
+        rgb(110,192,110)200%
+    );
+    width: 100%;
+}
+header{
+    background-color:rgb(110,192,110);
+    text-align: left;
+    
+}
+input{
+    background-color:lightgrey;
+    margin-top: 25px;
+    font-size: 25px;
+    width: 600px;
+    margin: 3px;
+    margin-inline-start: 15px;
+    border-color: black;
+}
+label{
+    font-size: 30px;
+    text-align: left;
+    margin-left: 20px;
+    color: black;
+}
+button{
+    font-size: 30px;
+    background-color:rgb(49, 223, 107);
+    color: black;
+    margin-left: 20px;
+    text-align: left;
+}
+body{
+    background-color: white;
+}
+td{
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 250px;
+}
+tr{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#tablas{
+    display: flex;
+    margin: 1%;
+}
+table{
+    background-color: rgb(88, 180, 255);
+    border-collapse: separate;
+    border: pxpx;
+    border-color: rgb(18, 69, 165);
+    font-size: 30px;
+    text-align: center;
+    height: 600px;
+    width: 700px;
+}
+#tablas1{
+    object-position: center;
+    width: 25%;
+}
+#tablas2{
+    object-position: center;
+    width: 25%;
+}
+td{
+    image-rendering: 4px;
+}
+.botonimg button{
+    font-size: 30px;
+    background-color: rgb(96, 255, 162);
+    color: black;
+    margin-bottom: auto;
+}
+footer{
+    background-color: rgb(110,192,110);
+    margin-top: auto;
+}
+section table{
+    text-align: center;
+}
+#prin{
+    text-align: center;
+    background-color: rgb(110,192,110);
+}
+#prin :hover{
+    color: darkgreen;
+    font-size: 30px;
+}
+#servicios{
+    width: 100%;
+    text-align: center;
+}
+#navtodos{
+    display: flex;
+    border-radius: -50px;
+}
+main h1{
+    text-align: center;
+}
+#nav1{
+    width: 100%;
+    font-size: 25px;
+}
+#nav2{
+    width: 100%;
+    font-size: 25px;
+}
+#nav3{
+    width: 100%;
+    font-size: 25px;
+}
+#extra0{
+    display: flex;
+}
+#extra1{
+    width: 100%;
+    font-size: 25px;
+}
+#extra2{
+    width: 100%;
+    font-size: 25px;
+}
+#extra3{
+    width: 100%;
+    font-size: 25px;
+}
+del2{
+    float: left;
+    margin-left: 220px;
+    color: chocolate;
+}
+del3{
+    float: left;
+    margin-left: 260px;
+    color: chocolate;
+}
+del1{
+    float: left;
+    margin-left: 220px;
+    color: chocolate;
+}
+ins{
+    color: chocolate;
+}
+ul{
+    font-size: 30px;
+}
+#serviciom{
+    p{
+        font-size: 30px;
+    }
+}
+.ser{
+    border-radius: 50px;
+}
+

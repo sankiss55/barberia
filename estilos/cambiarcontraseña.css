@@ -1,0 +1,94 @@
+body {
+    
+    background-color: burlywood;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="password"] {
+    width: calc(100% - 24px);
+    padding: 12px;
+    border: 2px solid #333;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+input[type="password"]:focus {
+    border-color: #666; 
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 12px 30px;
+    background-color: #c8c8c9; 
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"].btn-disabled {
+    background-color: #aaa; 
+    cursor: not-allowed;
+}
+
+input[type="submit"].btn-enabled {
+    background-color: #888888;
+    cursor: pointer;
+    color: rgb(226, 226, 226);
+}
+
+#regresar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 28px;
+    color: #333; 
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+#requisitos {
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: rgb(112, 112, 112);
+}

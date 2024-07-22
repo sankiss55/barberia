@@ -1,0 +1,42 @@
+body {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#regresar {
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+#titulo h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+.input-container {
+    margin-bottom: 20px;
+}
+.btn-disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+.btn-enabled {
+    background-color: #9c9c93;
+    color: #080808;
+}
+#telefonoh1{
+    width: 30px;
+}
+#telefono2{
+    width: 120px;
+}

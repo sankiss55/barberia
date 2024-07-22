@@ -1,0 +1,27 @@
+
+form{
+    text-align: center;
+}
+
+
+h2{
+    font-family: "Montserrat", sans-serif;
+}
+
+input[type="text"]{
+    border-radius: 20px;
+    border: solid black 1px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+input[type="submit"]{
+    background-color: rgb(190, 190, 190);
+    border-radius: 20px;
+    border: solid black 1px ;
+    cursor: pointer;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+#regresar{
+    cursor: pointer;
+}

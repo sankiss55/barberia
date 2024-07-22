@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/Error.css">
+    <link rel="shortcut icon" href="imagenes/Pasted-20240110-165916_preview_rev_1.png" type="image/x-icon">
+    <title>Error 404 - Pagina no disponible</title>
+</head>
+<body>
+    <div class="error-container">
+        <h1>Error 404</h1>
+        <p>Lo sentimos, la página por el momento no esta disponible.</p>
+        <p>Puedes volver a intentarlo <a href="" id="error">mas tarde</a>.</p>
+        <img src="imagenes/paginas-error.png" alt="ErrorLogo">
+        <script>
+            document.getElementById("error").addEventListener("click", function(evento){
+                evento.preventDefault(); 
+                window.history.back();
+            });
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    background-image: url('../imagenes/barber.jpg');
+}
+
+form {
+    width: 400px;
+    height: 490px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border-style: outset;
+    border-color: black;
+    position: relative;
+}
+
+.Buscar {
+    width: 150px;
+    height: 30px;
+    background-color: rgb(130, 130, 199);
+    color: aliceblue;
+    border-radius: 5px;
+    
+   margin-left: 16%;
+    cursor: pointer;
+}
+
+input {
+    width: 200px;
+   margin-left: 10%;
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    color: rgb(152, 121, 235);
+    text-align: center;
+}
+
+h2 {
+    font-family: "Rubik", sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+img {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   pointer-events: none;
+}
+
+hr {
+    color: black;
+}
+
+button{
+    position: absolute;
+font-family: "Roboto Slab", serif;
+font-optical-sizing: auto;
+    background-color:transparent;
+    border:none;
+    border-bottom:  1px solid blue;
+    cursor: pointer;
+    left: 15vh;
+    bottom: 30%;
+}
+main{
+    position: relative;
+}
+#formulario{
+    display: none;
+}
+#regresar{
+    cursor: pointer;
+}
